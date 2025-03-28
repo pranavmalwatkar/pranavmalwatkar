@@ -1,0 +1,540 @@
+/* Import Google Fonts for consistent typography */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+/* Responsive zoom adjustments for specific screen resolutions */
+@media screen and (max-width: 1366px) and (max-height:768px) {
+  body {
+    zoom: 100%; /* Standard zoom for 1366x768 screens */
+  }
+
+  .form-popup {
+    zoom: 105%; /* Slightly larger zoom for form popups */
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-height:900px) {
+  body {
+    zoom: 100%; /* Standard zoom for 1440x900 screens */
+  }
+}
+
+/* General body styling for consistent layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font for the website */
+}
+
+/* Navbar styling for navigation bar layout */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for navbar */
+    color: white; /* White text color */
+}
+
+/* Logo styling for the navbar */
+.navbar .logo img {
+    height: 60px; /* Logo height */
+    width: 100px; /* Logo width */
+}
+
+/* Navigation links styling for navbar links */
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex;
+    gap: 15px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline; /* Inline display for list items */
+}
+
+.nav-links li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links li a:hover {
+    color: #00bcd4; /* Highlight color on hover */
+}
+
+/* Resume button styling for call-to-action */
+.resume-btn {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    background-color: #00bcd4; /* Button background color */
+    padding: 8px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.resume-btn:hover {
+    background-color: #008c9e; /* Darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduce gap between links */
+    }
+
+    .navbar {
+        flex-wrap: wrap; /* Allow navbar to wrap content */
+    }
+}
+
+/* About Me section styling */
+.about-section {
+    padding: 50px;
+    background-color: #ffffff; /* White background for contrast */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+.about-section h2 {
+    font-size: 2rem; /* Section heading font size */
+    color: #ff9800; /* Orange color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+/* Education table styling */
+.education-table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-top: 20px; /* Space above table */
+}
+
+.education-table th, .education-table td {
+    border: 1px solid #ddd; /* Light border for table cells */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+}
+
+.education-table th {
+    background-color: #f4f4f4; /* Light gray background for header */
+    font-weight: bold; /* Bold text for header */
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.education-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Skills Section styling for showcasing skills */
+.skills-section {
+    padding: 40px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background color */
+    display: flex; /* Flexbox layout for alignment */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Container for skills content */
+.skills-container {
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px; /* Space between left and right sections */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Categories of skills on the left */
+.skills-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 1; /* Take up 1 part of the available space */
+    max-width: 400px; /* Limit the width of the categories */
+}
+
+/* Skill details on the right */
+.skills-details {
+    flex: 2; /* Take up 2 parts of the available space */
+    background-color: #e0f7fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px; /* Limit the width of the details */
+}
+
+/* Button styling for skill categories */
+.skill-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    background-color: #e0f7fa; /* Blue background color */
+    border: 2px solid #007bff;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000080; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect for skill buttons */
+.skill-btn:hover {
+    background-color: #b2ebf2; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Individual skill category hidden by default */
+.skills-category {
+    display: none; /* Hide by default */
+}
+
+/* Active skill category displayed */
+.skills-category.active {
+    display: block; /* Show active category */
+}
+
+/* Individual skill item layout */
+.skill {
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space between skill name and progress */
+    align-items: center; /* Center align items */
+    margin-bottom: 15px; /* Space below each skill */
+}
+
+/* Progress bar container styling */
+.progress-bar {
+    width: 70%; /* Width of the progress bar */
+    height: 10px; /* Height of the progress bar */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Progress indicator styling */
+.progress {
+    height: 100%; /* Full height of the progress bar */
+    background-color: orange; /* Blue progress color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Progress bar container */
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+/* Progress bar fill */
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Frontend colors */
+#frontend .progress-bar {
+    background-color: #f06529; /* HTML5 */
+}
+#frontend .progress {
+    background-color: #ff7f50;
+}
+
+/* CSS3 */
+#frontend .progress-bar:nth-child(2) {
+    background-color: #2965f1;
+}
+#frontend .progress:nth-child(2) {
+    background-color: #6495ed;
+}
+
+/* JavaScript */
+#frontend .progress-bar:nth-child(3) {
+    background-color: #f7df1e;
+}
+#frontend .progress:nth-child(3) {
+    background-color: #ffd700;
+}
+
+/* React.js */
+#frontend .progress-bar:nth-child(4) {
+    background-color: #61dafb;
+}
+#frontend .progress:nth-child(4) {
+    background-color: #87ceeb;
+}
+
+/* Backend colors */
+#backend .progress-bar {
+    background-color: #68a063; /* Node.js */
+}
+#backend .progress {
+    background-color: #90ee90;
+}
+
+/* Express.js */
+#backend .progress-bar:nth-child(2) {
+    background-color: #000000;
+}
+#backend .progress:nth-child(2) {
+    background-color: #696969;
+}
+
+/* Database colors */
+#database .progress-bar {
+    background-color: #00758f; /* MySQL */
+}
+#database .progress {
+    background-color: #00ced1;
+}
+
+/* MongoDB */
+#database .progress-bar:nth-child(2) {
+    background-color: #47a248;
+}
+#database .progress:nth-child(2) {
+    background-color: #98fb98;
+}
+
+/* Tools colors */
+#tools .progress-bar {
+    background-color: #f34f29; /* Git */
+}
+#tools .progress {
+    background-color: #ff6347;
+}
+
+/* VS Code */
+#tools .progress-bar:nth-child(2) {
+    background-color: #007acc;
+}
+#tools .progress:nth-child(2) {
+    background-color: #1e90ff;
+}
+
+/* Projects Section styling */
+.projects-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 projects per row */
+    gap: 20px; /* Space between project cards */
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.demo-btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.demo-btn:hover {
+    background-color: #e68900;
+}
+
+/* Contact Section Styling */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Contact Box Styling */
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 400px; /* Increased width */
+    padding: 20px; /* Adjusted padding for better spacing */
+    border: 2px solid #000080; /* Navy border */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    font-size: 1.5em;
+    color: #ff8c00; /* Orange color for icons */
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: #000080; /* Navy text color */
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Contact Section Styling */
+.contact-section h2 {
+    text-align: center; /* Center align the heading */
+    font-size: 2rem; /* Adjust font size if needed */
+    color: #000080; /* Navy color for the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 15px 0; /* Padding for spacing */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    border-top: 2px solid #00bcd4; /* Highlighted top border */
+    margin-bottom: 20px; /* Add space below the footer */
+}
+
+.footer-section p {
+    margin: 0; /* Remove default margin */
+    font-family: 'Quicksand', sans-serif; /* Consistent font */
+}
+
+/* Footer Note Styling */
+.footer-note {
+    font-size: 0.8rem; /* Smaller font size for the note */
+    color: #f50606; /* Light gray text color */
+    margin-top: 10px; /* Space above the note */
+}
+
+/* Single Column Icon Styling */
+.icon-l-shape {
+    display: flex;
+    flex-direction: row; /* Arrange icons in a single row */
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center align icons */
+    margin-top: 20px; /* Add spacing below the "Full Stack Developer" text */
+    position: relative; /* Position icons relative to the content */
+    transform: none; /* Remove vertical centering */
+    border: none; /* Remove border */
+}
+
+.icon-l-shape img {
+    width: 70px; /* Icon width */
+    height: 70px; /* Icon height */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+    border: 2px solid #007bff; /* Border color for hero section */
+}
+
+.icon-l-shape img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+/* Hero section styling for the main banner */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for hero section */
+    /* border: 2px solid #007bff; Border color for hero section */
+}
+
+.hero-content {
+    max-width: 20%; /* Limit content width */
+    /* border: 2px solid #007bff; Border color for hero section */
+    /*  width: 200px; /* Width of content */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Large heading font size */
+    /* color: #00aaff; Primary color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero-content p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.hero-content .highlight {
+    font-size: 1.5rem; /* Highlighted text font size */
+    font-weight: bold; /* Bold text for emphasis */
+    color: orange; /* Highlight color */
+}
+
+/* Hero image styling for profile picture */
+.hero-image img {
+    width: 300px; /* Image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.hero-table td {
+    vertical-align: middle; /* Align content vertically */
+    padding: 0 50px; /* Add horizontal padding for spacing */
+}
+
+.hero-image {
+    padding-right: 50%; /* Add gap between the image and the text */
+}
