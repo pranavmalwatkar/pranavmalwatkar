@@ -21,12 +21,22 @@
 /* General body styling for consistent layout */
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif; /* Default font for the website */
+    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Prevent scrolling when navbar is active */
 body.no-scroll {
     overflow: hidden;
+}
+
+/* Fix for any elements causing overflow */
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar styling for navigation bar layout */
@@ -43,7 +53,7 @@ body.no-scroll {
     width: 100%; /* Ensure navbar spans full width */
     z-index: 1000; /* Ensure navbar is above other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
-    box-sizing: border-box; /* Ensure proper layout */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 /* Logo styling for the navbar */
@@ -117,7 +127,7 @@ body.no-scroll {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 100%;
+        width: 100%; /* Ensure links do not overflow */
         padding: 10px 0;
         gap: 15px; /* Adjust gap for smaller screens */
     }
@@ -661,6 +671,8 @@ body.no-scroll {
     padding: 20px; /* Reduced padding */
     background-color: #f9f9f9;
     min-height: 85vh; /* Adjusted height */
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .hero-container {
@@ -670,7 +682,7 @@ body.no-scroll {
     justify-content: space-between;
     gap: 20px; /* Reduced gap */
     max-width: 1200px;
-    width: 100%;
+    width: 100%; /* Ensure container spans full width */
 }
 
 /* Hero section image adjustments */
@@ -696,6 +708,12 @@ body.no-scroll {
     margin: 20px auto; /* Add margin for proper spacing */
 }
 
+/* Section adjustments */
+section {
+    width: 100%; /* Ensure sections span full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 /* Responsive adjustments for laptops */
 @media (min-width: 1024px) and (max-width: 1366px) {
     .hero-container {
@@ -717,6 +735,7 @@ body.no-scroll {
     .hero-container {
         flex-direction: column;
         gap: 20px; /* Reduced gap for better alignment */
+        width: 100%; /* Ensure container spans full width */
     }
 
     .hero-content {
