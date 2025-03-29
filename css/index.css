@@ -44,7 +44,7 @@ body.no-scroll {
     display: flex;
     justify-content: space-between; /* Space between logo and links */
     align-items: center;
-    padding: 10px 20px; /* Adjust padding for consistent spacing */
+    padding: 15px 20px; /* Increase padding for better height */
     background-color: #333; /* Dark background for navbar */
     color: white; /* White text color */
     position: fixed; /* Ensure navbar stays at the top */
@@ -54,12 +54,13 @@ body.no-scroll {
     z-index: 1000; /* Ensure navbar is above other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
     box-sizing: border-box; /* Prevent overflow */
+    height: 70px; /* Set a fixed height for the navbar */
 }
 
 /* Logo styling for the navbar */
 .navbar .logo img {
-    height: 60px; /* Logo height */
-    width: 100px; /* Logo width */
+    height: 50px; /* Adjust logo height to fit the new navbar height */
+    width: auto; /* Maintain aspect ratio */
 }
 
 /* Navigation links styling for navbar links */
@@ -144,6 +145,15 @@ body.no-scroll {
     .resume-btn {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
         padding: 6px 12px; /* Adjust padding for better fit */
+    }
+
+    .navbar {
+        padding: 12px 15px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adjust dynamically */
+    }
+
+    .navbar .logo img {
+        height: 40px; /* Adjust logo size for smaller screens */
     }
 }
 
