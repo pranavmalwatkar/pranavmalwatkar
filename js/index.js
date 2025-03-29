@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navToggle && navLinks) {
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            document.body.classList.toggle('no-scroll'); // Prevent scrolling when navbar is active
         });
     }
 
@@ -73,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             if (navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
+                document.body.classList.remove('no-scroll'); // Re-enable scrolling
             }
         });
     });

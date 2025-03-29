@@ -24,14 +24,26 @@ body {
     font-family: Arial, sans-serif; /* Default font for the website */
 }
 
+/* Prevent scrolling when navbar is active */
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* Navbar styling for navigation bar layout */
 .navbar {
     display: flex;
     justify-content: space-between; /* Space between logo and links */
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Adjust padding for consistent spacing */
     background-color: #333; /* Dark background for navbar */
     color: white; /* White text color */
+    position: fixed; /* Ensure navbar stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure navbar spans full width */
+    z-index: 1000; /* Ensure navbar is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+    box-sizing: border-box; /* Ensure proper layout */
 }
 
 /* Logo styling for the navbar */
@@ -44,7 +56,7 @@ body {
 .nav-links {
     list-style: none; /* Remove default list styling */
     display: flex;
-    gap: 15px; /* Space between links */
+    gap: 20px; /* Increase gap between links */
     margin: 0;
     padding: 0;
 }
@@ -73,6 +85,10 @@ body {
     border-radius: 5px; /* Rounded corners */
     font-weight: bold; /* Bold text */
     transition: background-color 0.3s; /* Smooth background color transition on hover */
+    display: inline-block; /* Ensure proper alignment */
+    margin-right: 10px; /* Add spacing to prevent cutoff */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .resume-btn:hover {
@@ -103,6 +119,7 @@ body {
         right: 0;
         width: 100%;
         padding: 10px 0;
+        gap: 15px; /* Adjust gap for smaller screens */
     }
 
     .nav-links.active {
@@ -112,6 +129,11 @@ body {
     .nav-links li {
         text-align: center;
         margin: 10px 0;
+    }
+
+    .resume-btn {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 6px 12px; /* Adjust padding for better fit */
     }
 }
 
@@ -665,6 +687,15 @@ body {
     max-width: 600px;
 }
 
+/* Profile image responsiveness */
+.profile-image {
+    object-fit: cover;
+    width: 150px; /* Adjust size for better visibility */
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto; /* Add margin for proper spacing */
+}
+
 /* Responsive adjustments for laptops */
 @media (min-width: 1024px) and (max-width: 1366px) {
     .hero-container {
@@ -708,6 +739,11 @@ body {
     .icon-l-shape img {
         width: 50px; /* Adjusted icon size */
         height: 50px;
+    }
+
+    .profile-image {
+        width: 120px; /* Smaller size for mobile devices */
+        height: 120px;
     }
 }
 
