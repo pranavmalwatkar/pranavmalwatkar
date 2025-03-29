@@ -173,102 +173,190 @@ body {
     background-color: #f1f1f1; /* Highlight row on hover */
 }
 
+/* Education Cards Section */
+.education-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.education-card {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.education-details {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.education-detail {
+    display: none; /* Hide all details by default */
+    background-color: #e0f7fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.education-detail.active {
+    display: block; /* Show active detail */
+}
+
+/* Education Section Styling */
+.education-categories {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.education-btn {
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000080;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.education-btn:hover {
+    background-color: #b2ebf2;
+    transform: scale(1.05);
+}
+
+.education-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.education-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.education-category {
+    display: none; /* Hide all categories by default */
+    background-color: #e0f7fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.education-category.active {
+    display: block; /* Show active category */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .education-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Skills Section styling for showcasing skills */
 .skills-section {
-    padding: 30px; /* Reduced padding */
-    background-color: #f9f9f9; /* Light background color */
-    display: flex; /* Flexbox layout for alignment */
+    padding: 30px;
+    background-color: #f9f9f9;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-/* Container for skills content */
 .skills-container {
-    display: flex; /* Flexbox layout for alignment */
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Space between left and right sections */
-    align-items: flex-start; /* Align items to the top */
-    gap: 15px; /* Reduced gap */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
     width: 100%;
-    max-width: 1000px; /* Adjusted max width for smaller screens */
+    max-width: 1000px;
 }
 
-/* Categories of skills on the left */
 .skills-categories {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Reduced gap between buttons */
-    flex: 1; /* Take up 1 part of the available space */
-    max-width: 200px; /* Adjusted width for smaller layout */
+    gap: 10px;
+    flex: 1;
+    max-width: 200px;
 }
 
-/* Skill details on the right */
 .skills-details {
-    flex: 2; /* Take up 2 parts of the available space */
+    flex: 2;
     background-color: #e0f7fa;
     border: 2px solid #007bff;
     border-radius: 10px;
-    padding: 15px; /* Reduced padding for compact layout */
-    max-width: 500px; /* Adjusted max width */
-    text-align: justify; /* Justify text in skill details */
+    padding: 15px;
+    max-width: 500px;
+    text-align: justify;
 }
 
-/* Button styling for skill categories */
 .skill-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px; /* Padding inside the button */
-    border: none; /* Remove border */
-    background-color: #e0f7fa; /* Blue background color */
+    padding: 10px;
+    border: none;
+    background-color: #e0f7fa;
     border: 2px solid #007bff;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
-    color: #000080; /* White text color */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: transform 0.3s, background-color 0.3s; /* Smooth background color transition */
+    color: #000080;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-/* Hover effect for skill buttons */
 .skill-btn:hover {
-    background-color: #b2ebf2; /* Darker blue on hover */
+    background-color: #b2ebf2;
     transform: scale(1.05);
 }
 
-/* Individual skill category hidden by default */
+.skill-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
 .skills-category {
-    display: none; /* Hide by default */
+    display: none;
 }
 
-/* Active skill category displayed */
 .skills-category.active {
-    display: block; /* Show active category */
+    display: block;
 }
 
-/* Individual skill item layout */
-.skill {
-    display: flex; /* Flexbox layout for alignment */
-    justify-content: space-between; /* Space between skill name and progress */
-    align-items: center; /* Center align items */
-    margin-bottom: 15px; /* Space below each skill */
-}
+/* Responsive adjustments for skills section */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 
-/* Progress bar container styling */
-.progress-bar {
-    width: 70%; /* Width of the progress bar */
-    height: 10px; /* Height of the progress bar */
-    background-color: #e0e0e0; /* Light gray background */
-    border-radius: 5px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow content */
-}
+    .skills-categories {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 
-/* Progress indicator styling */
-.progress {
-    height: 100%; /* Full height of the progress bar */
-    background-color: orange; /* Blue progress color */
-    border-radius: 5px; /* Rounded corners */
+    .skills-details {
+        max-width: 100%;
+        padding: 20px;
+    }
 }
 
 /* Progress bar container */
