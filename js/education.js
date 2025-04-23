@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = button.getAttribute('data-category');
 
             // Remove active class from all categories and buttons
-            educationCategories.forEach(categoryDiv => categoryDiv.classList.remove('active'));
-            educationButtons.forEach(btn => btn.classList.remove('active'));
+            educationCategories.forEach(categoryDiv => categoryDiv.classList.add('hidden'));
+            educationButtons.forEach(btn => btn.classList.remove('bg-blue-500', 'text-white'));
 
             // Add active class to the selected category and button
             const activeCategory = document.getElementById(category);
             if (activeCategory) {
-                activeCategory.classList.add('active');
+                activeCategory.classList.remove('hidden');
             }
-            button.classList.add('active');
+            button.classList.add('bg-blue-500', 'text-white');
         });
     });
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultEducationCategory = document.getElementById('mca');
     const defaultEducationButton = document.querySelector('#education .skill-btn[data-category="mca"]');
     if (defaultEducationCategory && defaultEducationButton) {
-        defaultEducationCategory.classList.add('active');
-        defaultEducationButton.classList.add('active');
+        defaultEducationCategory.classList.remove('hidden');
+        defaultEducationButton.classList.add('bg-blue-500', 'text-white');
     }
 });

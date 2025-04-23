@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = button.getAttribute('data-category');
 
             // Remove active class from all categories and buttons
-            skillCategories.forEach(categoryDiv => categoryDiv.classList.remove('active'));
-            skillButtons.forEach(btn => btn.classList.remove('active'));
+            skillCategories.forEach(categoryDiv => categoryDiv.classList.add('hidden'));
+            skillButtons.forEach(btn => btn.classList.remove('bg-blue-500', 'text-white'));
 
             // Add active class to the selected category and button
             const activeCategory = document.getElementById(category);
             if (activeCategory) {
-                activeCategory.classList.add('active');
+                activeCategory.classList.remove('hidden');
             }
-            button.classList.add('active');
+            button.classList.add('bg-blue-500', 'text-white');
         });
     });
 

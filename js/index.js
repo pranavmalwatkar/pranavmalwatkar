@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (navToggle && navLinks) {
         navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            document.body.classList.toggle('no-scroll'); // Prevent scrolling when navbar is active
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex'); // Ensure it displays as flex when visible
         });
     }
 
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinkItems = document.querySelectorAll('.nav-links li a');
     navLinkItems.forEach(link => {
         link.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                document.body.classList.remove('no-scroll'); // Re-enable scrolling
+            if (!navLinks.classList.contains('hidden')) {
+                navLinks.classList.add('hidden');
+                navLinks.classList.remove('flex');
             }
         });
     });
