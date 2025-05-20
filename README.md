@@ -30,7 +30,7 @@ I am eager to contribute to innovative projects and grow as a professional in th
 
 ## 📂 Explore My Portfolio
 Visit my portfolio website to see my work in action:  
-[**Pranav Malwatkar - Portfolio Website**](https://your-website-link.com)
+[**Pranav Malwatkar - Portfolio Website**]([https://your-website-link.com](https://pranavmalwatkar.github.io/pranavmalwatkar/)
 
 ## 📞 Let's Connect!
 Feel free to reach out to me for opportunities, collaborations, or just to say hi!  
