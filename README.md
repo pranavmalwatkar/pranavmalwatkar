@@ -9,6 +9,10 @@ I am currently pursuing **Master of Computer Applications (MCA)** at P.E.S's Mod
 With a strong foundation in programming and web development, I have honed my skills in **Frontend**, **Backend**, and **Database Management**.  
 I am eager to contribute to innovative projects and grow as a professional in the tech industry.
 
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="375" alt="Coding animation">
+</p>
+
 ## 💻 Features of My Portfolio
 - **Responsive Design**: Fully optimized for all devices, from desktops to mobile phones.
 - **Interactive Sections**: Explore my education, technical skills, projects, and certifications.
