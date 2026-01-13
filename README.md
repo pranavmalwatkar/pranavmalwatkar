@@ -45,4 +45,4 @@ Feel free to reach out to me for opportunities, collaborations, or just to say h
 
 ---
 
-✨ *"Building a future powered by technology!"* ✨## Hi there 👋
+✨ *"Building a future powered by technology!"* ✨## Hi there 👋 
