@@ -20,47 +20,39 @@ export const ContactInfoCard = ({
       const leetcodeUsername = leetCodeUserName;
       const fetchLeetCodeStats = async () => {
         try {
-          const response = await fetch(leetcodelink + "/graphql", {
+          const response = await fetch("/graphql", {
             method: "POST",
-            mode: 'no-cors', // no-cors, *cors, same-origin
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
               query: `
-                    query languageStats($username: String!) {
-                    matchedUser(username: $username) {
-                        languageProblemCount {
-                        languageName
-                        problemsSolved
-                    }
-                }
+      query getUserProfile($username: String!) {
+        matchedUser(username: $username) {
+          submitStatsGlobal {
+            acSubmissionNum {
+              difficulty
+              count
             }
-            `,
+          }
+        }
+      }
+    `,
               variables: { username: leetcodeUsername },
             }),
           });
 
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-
           const data = await response.json();
-          if (
-            data.data &&
-            data.data.matchedUser &&
-            data.data.matchedUser.submitStats
-          ) {
-            const allStats = data.data.matchedUser.submitStats.acSubmissionNum;
+
+          if (data?.data?.matchedUser?.submitStatsGlobal) {
+            const allStats =
+              data.data.matchedUser.submitStatsGlobal.acSubmissionNum;
+
             const totalSolved = allStats.find(
               (stat) => stat.difficulty === "All",
             );
 
-            if (totalSolved) {
-              setSolvedCount(totalSolved.count);
-            } else {
-              setSolvedCount(0);
-            }
+            setSolvedCount(totalSolved?.count ?? 0);
           } else {
             setSolvedCount("N/A");
           }
