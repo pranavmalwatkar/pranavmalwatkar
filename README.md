@@ -1,138 +1,90 @@
-Love the energy 😄 — I’ll write you a **high-impact README** designed to:
+<h1 align="center">Hi 👋, I'm Pranav Malwatkar</h1>
+<h3 align="center">Full Stack Developer | MERN Stack | UI/UX Enthusiast</h3>
 
-✅ Look premium on GitHub
-✅ Attract recruiters & devs
-✅ Showcase your portfolio strongly
-✅ Include badges, layout, and modern structure
-✅ Be copy-paste ready
+<p align="center">
+🚀 Building modern web experiences • 💡 Problem Solver • 🎯 Career Focused Developer
+</p>
 
-You can paste this directly into your repo’s `README.md`.
-
----
-
-````md
-<div align="center">
-
-# 🚀 Pranav Malwatkar — Modern Portfolio
-
-### ✨ Full Stack Developer | MERN Stack | UI/UX Enthusiast
-
-🌐 **Live Website:**  
-👉 https://pranavmalwatkar.vercel.app/
-
-</div>
+<p align="center">
+<a href="https://pranavmalwatkar.vercel.app/"><b>🌐 Portfolio</b></a> •
+<a href="https://leetcode.com/u/Pranav_Raju_Malwatkar/"><b>🧠 LeetCode</b></a> •
+<a href="https://www.linkedin.com/in/pranav-malwatkar-9834b1239/"><b>🔗 LinkedIn</b></a> •
+<a href="https://github.com/pranavmalwatkar"><b>💻 GitHub</b></a>
+</p>
 
 ---
 
-## 🎯 About This Project
+## 🚀 About Me
 
-A modern, animated, fully responsive developer portfolio built to showcase my projects, skills, and achievements with strong UI/UX focus.
-
-This portfolio is designed to feel **alive** — smooth animations, modern layout, glowing effects, and a clean professional look.
-
-> Built to impress recruiters. Built to attract collaborators. Built to stand out.
-
----
-
-## 📸 Preview
-
-<div align="center">
-
-![Portfolio Screenshot](./assets/p1.png)
-![Portfolio Screenshot](./assets/p2.png)
-![Portfolio Screenshot](./assets/p3.png)
-![Portfolio Screenshot](./assets/p4.png)
-![Portfolio Screenshot](./assets/p5.png)
-
-</div>
-
----
-
-## ✨ Features
-
-✅ Clean & modern UI/UX  
-✅ Smooth animations & interactive effects  
-✅ Fully responsive (mobile + tablet + desktop)  
-✅ Contact form with EmailJS integration  
-✅ Fast performance (React + Vanilla CSS)  
-✅ Portfolio sections: About • Skills • Projects • Achievements • Contact  
-✅ Professional design for recruiters
+- 🎓 MCA Student passionate about modern web technologies
+- ⚡ MERN Stack Developer
+- 🎨 Love building clean UI/UX & animations
+- 🧠 Solved 100+ coding problems
+- 🌱 Currently improving system design & backend skills
+- 🎯 Goal: Become a top-tier full stack engineer
 
 ---
 
 ## 🛠 Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| ⚛ React.js | Frontend framework |
-| 🎨 Vanilla CSS | Styling & animations |
-| ✉ EmailJS | Contact form email support |
-| 🚀 Vercel | Deployment |
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=yellow)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3)
+
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express)
+
+### Database
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb)
+
+### Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual%20studio%20code)
 
 ---
 
-## 🚀 Getting Started
+## 📊 GitHub Stats
 
-Clone and run locally:
+<p align="center">
 
-```bash
-git clone https://github.com/pranavmalwatkar/pranavmalwatkar.git
-cd pranavmalwatkar
-npm install
-npm start
-````
+<img src="https://github-readme-stats.vercel.app/api?username=pranavmalwatkar&show_icons=true&theme=tokyonight" height="150">
 
-App runs at:
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=pranavmalwatkar&theme=tokyonight" height="150">
 
-```
-http://localhost:3000
-```
+</p>
 
 ---
 
-## 📦 Production Build
+## 🧠 Coding Activity
 
-```bash
-npm run build
-```
-
-Optimized production files will be generated in the `/build` folder.
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavmalwatkar&layout=compact&theme=tokyonight">
+</p>
 
 ---
 
-## 🌟 Highlights
+## 🌟 Featured Project
 
-* Built with performance-first mindset
-* Recruiter-friendly layout
-* Strong UI design & animations
-* Real-world developer branding
-* Modern personal identity website
+🚀 **Modern Portfolio Website**  
+👉 https://pranavmalwatkar.vercel.app/
+
+A responsive animated portfolio built with React + CSS showcasing my work and design skills.
 
 ---
 
 ## 📬 Connect With Me
 
-<div align="center">
-
-📧 Email: [pranav_malwatkar_mca@moderncoe.edu.in](mailto:pranav_malwatkar_mca@moderncoe.edu.in)
-🔗 LinkedIn: [https://www.linkedin.com/in/pranav-malwatkar-9834b1239/](https://www.linkedin.com/in/pranav-malwatkar-9834b1239/)
-💻 GitHub: [https://github.com/pranavmalwatkar](https://github.com/pranavmalwatkar)
-📺 YouTube: [https://www.youtube.com/@SkillUpWithPranav](https://www.youtube.com/@SkillUpWithPranav)
-🧠 LeetCode: [https://leetcode.com/u/Pranav_Raju_Malwatkar/](https://leetcode.com/u/Pranav_Raju_Malwatkar/)
-
-</div>
+📧 pranav_malwatkar_mca@moderncoe.edu.in  
+🔗 LinkedIn: https://www.linkedin.com/in/pranav-malwatkar-9834b1239/  
+📺 YouTube: https://www.youtube.com/@SkillUpWithPranav  
+🧠 LeetCode: https://leetcode.com/u/Pranav_Raju_Malwatkar/
 
 ---
 
-## 🙌 Acknowledgements
-
-Built with ❤️ using React & CSS
-Designed to showcase creativity + engineering
-
----
-
-<div align="center">
-
-### ⭐ If you like this project, give it a star!
-
-</div>
+<p align="center">
+⭐ If you like my work, consider following me!
+</p>
