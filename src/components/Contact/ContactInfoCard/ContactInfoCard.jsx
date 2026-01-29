@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { leetCodeUserName, leetcodelink } from "../../../util/links";
+import { leetCodeUserName } from "../../../util/links";
 
 export const ContactInfoCard = ({
   iconUrl,
