@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Pranav Malwatkar</h1>
+<h1 align="center">Hi 👋, I'm Pranav Malwatkar</h1> 
 <h3 align="center">Full Stack Developer | MERN Stack | UI/UX Enthusiast</h3>
 
 <p align="center">
