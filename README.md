@@ -78,7 +78,7 @@ A responsive animated portfolio built with React + CSS showcasing my work and de
 
 ## 📬 Connect With Me
 
-📧 pranav_malwatkar_mca@moderncoe.edu.in  
+📧 Email : malwatkarpranav@gmail.com
 🔗 LinkedIn: https://www.linkedin.com/in/pranav-malwatkar-9834b1239/  
 📺 YouTube: https://www.youtube.com/@SkillUpWithPranav  
 🧠 LeetCode: https://leetcode.com/u/Pranav_Raju_Malwatkar/
