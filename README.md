@@ -86,5 +86,5 @@ A responsive animated portfolio built with React + CSS showcasing my work and de
 ---
 
 <p align="center">
-⭐ If you like my work, consider following me!
+⭐ If you like my work, consider following me! 
 </p>
