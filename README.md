@@ -76,7 +76,7 @@ A responsive animated portfolio built with React + CSS showcasing my work and de
 
 ---
 
-## 📬 Connect With Me
+## 📬 Connect With Me 
 
 📧 Email : malwatkarpranav@gmail.com
 🔗 LinkedIn: https://www.linkedin.com/in/pranav-malwatkar-9834b1239/  
